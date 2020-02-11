@@ -26,11 +26,12 @@ print(fibonacci(3))
 ## What happens if you:
 * Change the print statment to `print(fibonacci(0))`?
 * Change the print statment to `print(fibonacci(8))`?
-* Change the print statment to `print(fibonacci(100))`?
+* Change the print statment to `print(fibonacci(30))`?
 
 |||
 
-[Code Visualizer](open_tutor code/recursion/fibonacci.py)
+<details><summary>**Where is the code visualizer?**</summary>The code visualizer will only step through your code 1,000 times. These recursive functions exceed this limit and generate an error message. Because of this, the code visualizer was removed.</details>
+
 {try it}(python3 code/recursion/fibonacci.py 2)
 
 ## Fibonacci Sequence
@@ -60,9 +61,8 @@ for num in range(fibonacci_length):
 
 |||
 
-[Code Visualizer](open_tutor code/recursion/fibonacci.py)
 {try it}(python3 code/recursion/fibonacci.py 4)
 
-<details><summary>**Why is Python timing out?**</summary>The code written above is terribly inefficient. Each time through the loop, Python is calculating the same Fibonacci numbers again and again. When `num` is 1, Python calculates the Fibonacci numbers for 0 and 1. When `num` is 2, Python is calculating the Fibonacci numbers for 0, 1, and 2. Once `num` becomes large enough, it becomes too much work for Python to have to recalcuate these large numbers over and over again. There is a more efficient way to do this by using a data structure called a dictionary. The idea is to store previously calculated Fibonacci numbers in the dictionary. So instead of recalculating the same numbers again and again, you can get these numbers from the dictionary. If a Fibonacci number is not in the dictionary, then calculate it and add it to the dictionary. Data structures are a bit beyond the scope of these lessons, but here is the code of a more efficient way to calculate and print the Fibonacci sequence. [Fibonacci sequence with a dictionary](open_file .guides/example-code/fibonacci_example.py)
+<details><summary>**Why is Python timing out?**</summary>The code written above is terribly inefficient. Each time through the loop, Python is calculating the same Fibonacci numbers again and again. When `num` is 1, Python calculates the Fibonacci numbers for 0 and 1. When `num` is 2, Python is calculating the Fibonacci numbers for 0, 1, and 2. Once `num` becomes large enough, it becomes too much work for Python to have to recalculate these large numbers over and over again. There is a more efficient way to do this by using a data structure called a dictionary. The idea is to store previously calculated Fibonacci numbers in the dictionary. So instead of recalculating the same numbers again and again, you can get these numbers from the dictionary. If a Fibonacci number is not in the dictionary, then calculate it and add it to the dictionary. Data structures are a bit beyond the scope of these lessons, but here is the code of a more efficient way to calculate and print the Fibonacci sequence. [Fibonacci sequence with a dictionary](open_file .guides/example-code/fibonacci_example.py). Copy and paste the code from this new file into the old file if you want to run it.
 
 {Check It!|assessment}(multiple-choice-3252681714)

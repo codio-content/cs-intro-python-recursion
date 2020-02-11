@@ -31,5 +31,4 @@ def hilbert(dist, rule, angle, depth, t):
             t.right(angle)
         
 hilbert(5, 1, 90, 5, t)
-
 turtle.mainloop()

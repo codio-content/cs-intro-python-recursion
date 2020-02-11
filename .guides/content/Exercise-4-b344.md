@@ -3,7 +3,7 @@
 ## Recursion Exercise 4
 
 **Problem**
-Write a recursive function called `reverse_string` that takes a string as a parameter. Return the string in reverse order.
+Write a recursive function called `reverse_string` that takes a string as a parameter. Return the string in reverse order. **Hint**, the `slice` operator will be helpful when solving this problem.
 
 **Expected Output**
 * If the function call is `reverse_string("cat")`, then the function would return `tac`

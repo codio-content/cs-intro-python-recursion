@@ -1659,7 +1659,7 @@
   "taskId": "multiple-choice-3252681714",
   "source": {
    "name": "reading question base case",
-   "showName": true,
+   "showName": false,
    "instructions": "## Reading Question\n\nWhat is the purpose of the base case in recursion?",
    "multipleResponse": false,
    "answers": [
@@ -1709,13 +1709,14 @@
      }
     ],
     "files": [
+     "code/recursion/fibonacci.py",
      "code/functions/fibonacci.py"
     ],
     "opened": [
      {
       "type": "file",
       "panelNumber": 0,
-      "content": "code/functions/fibonacci.py"
+      "content": "code/recursion/fibonacci.py"
      }
     ]
    },
@@ -1729,7 +1730,7 @@
   "source": {
    "name": "Formative assessment recursive sum function",
    "showName": false,
-   "instructions": "## Formative Assessment\n\nRearrange the code blocks below to create a recursive function that finds the sum of `n` integers. For example, `find_sum(5)` would add up the numbers 0 to 5. **Note**, not all of the blocks will be used.",
+   "instructions": "## Formative Assessment\n\nRearrange the code blocks below to create a recursive function that finds the sum of `n` integers. For example, `find_sum(5)` would add up the numbers 0 to 5. **Note**, you must use a docstring, and not all of the blocks will be used.",
    "initial": "def find_sum(n):\n    \"\"\"Recursively calculate the sum of the first n numbers\"\"\"\n    if n == 0:\n        return 0\n    else:\n        return(n + find_sum(n-1))\nprint(0) #distractor\nreturn(n - find_sum(n-1)) #distractor\nreturn(n + find_sum(n+1)) #distractor",
    "options": "{\n  \"sortableId\":\"sortable\",\n  \"trashId\":\"sortableTrash\"\n}",
    "grader": "",
@@ -2251,7 +2252,7 @@
   "source": {
    "name": "put recursion in order",
    "showName": false,
-   "instructions": "## Lab Question\n\nRearrange the blocks below to create a recursive function. Assume that the recursive function is called with this code:\n\n`my_recursive_function(15)`\n\n**Note**, not all of the code blocks will be used.",
+   "instructions": "## Lab Question\n\nRearrange the blocks below to create a recursive function. Assume that the recursive function is called with this code:\n\n`my_recursive_function(15)`\n\n**Note**, a docstring is required, but not all of the code blocks will be used.",
    "initial": "def my_recursive_function(num):\n    \"\"\"Creates a recursive function\"\"\"\n    if num < 0:\n        return 1\n    else:\n        return num + my_recursive_function(num - 1)\nprint(1) #distractor\nreturn num + my_recursive_function(num + 1) #distractor\nprint(num + my_recursive_function(num - 1)) #distractor",
    "options": "{\n  \"sortableId\":\"sortable\",\n  \"trashId\":\"sortableTrash\"\n}",
    "grader": "",
@@ -2284,7 +2285,7 @@
     "opened": [
      {
       "type": "preview",
-      "panelNumber": 0,
+      "panelNumber": 1,
       "content": "https://{{domain3000}}/"
      },
      {

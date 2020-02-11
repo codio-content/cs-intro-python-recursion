@@ -1,8 +1,21 @@
 # Import student function form the newly copied file
 from lab_challenge import recursive_power
 
-# Import system module
-import sys
+# Import system and os modules
+import sys, os
+
+# File path and name of student code
+path = ".guides/secure/unit_tests/recursion"
+file = "lab_challenge.py"
+student_code = os.path.join(path, file)
+
+def is_recursive(file):
+  recursion_count = 0
+  with open(file, "r") as code_to_check:
+    for line in code_to_check.readlines():
+      if "recursive_power" in line and "print" not in line:
+        recursion_count += 1
+    return recursion_count > 1
 
 # Homemade unit test, call student function w/ instructor input & output
 def test_student_code():
@@ -14,6 +27,7 @@ def test_student_code():
     test1 = False
     test2 = False
     test3 = False
+    test4 = False
     
     # Print title for visual feedback
     print("<h2>Testing your code...</h2>")
@@ -39,9 +53,16 @@ def test_student_code():
     else:
         print("Test 3 did <b>not pass</b>.")
     
+    # Test to see if recursion is being used
+    test4 = is_recursive(student_code)
+    if test4:
+      print("Test 4 <b>passed</b> - recursion used")
+    else:
+      print("Test 4 did <b>not pass</b> - recursion not used")
+    
     # Return results of the unit tests
     print("<hr>")
-    if test1 and test2 and test3:
+    if test1 and test2 and test3 and test4:
         return True
     else:
         return False

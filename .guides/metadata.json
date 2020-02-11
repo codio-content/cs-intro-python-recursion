@@ -3,7 +3,13 @@
   {
    "id": "e2fe915e-4a91-c104-fb88-bc80ca6c1131",
    "title": "Learning Objectives - Recursion",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    }
+   ],
+   "layout": "1-panel",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Learning-Objectives---Recursion-e2fe.md",

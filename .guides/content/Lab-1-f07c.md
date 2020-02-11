@@ -25,37 +25,43 @@ def recursive_tree(branch_length, angle, t):
     """Draw a tree recursively"""
     if branch_length > 5:
         pass
+      
+turtle.mainloop()
 ```
 
 Start drawing the tree by going forward and turning right. Call `recursive_tree` again, but reduce `branch_length` by 15. The code should run, but the tree will not look like a tree. It looks more like a curve made of series of line segments decreasing in size.
 
 ```python
+![.guides/images/recursive-tree-code](.guides/images/recursive-tree-code.png)
 def recursive_tree(branch_length, angle, t):
     """Draw a tree recursively"""
     if branch_length > 5:
         t.forward(branch_length)
         t.right(angle)
         recursive_tree(branch_length - 15, angle, t)
+        
+turtle.mainloop()
 ```
 
-[Code Visualizer](open_tutor code/recursion/recursive_tree.py)
-{Try it}(bash .guides/bg.sh python3 code/recursion/recursive_tree.py)
+{Try it}(bash .guides/bg.sh python3 code/recursion/recursive_tree.py 1)
 
 The next step is to draw the branch that goes off to the left. Since the turtle turned to the right the number of degrees that the parameter `angle` represents, the turtle needs to turn to the left twice the degrees of `angle`. Turning to the left `angle` will put the turtle back at its original heading. The turtle needs to go further to the left. Then draw another branch whose length is reduced by 15.
 
 ```python
 def recursive_tree(branch_length, angle, t):
     """Draw a tree recursively"""
+![.guides/images/recursive-tree-code](.guides/images/recursive-tree-code.png)
     if branch_length > 5:
         t.forward(branch_length)
         t.right(angle)
         recursive_tree(branch_length - 15, angle, t)
         t.left(angle * 2)
         recursive_tree(branch_length - 15, angle, t)
+        
+turtle.mainloop()
 ```
 
-[Code Visualizer](open_tutor code/recursion/recursive_tree.py)
-{Try it}(bash .guides/bg.sh python3 code/recursion/recursive_tree.py)
+{Try it}(bash .guides/bg.sh python3 code/recursion/recursive_tree.py2)
 
 The tree is looking better, but there are two more things that need to be done. First, put the turtle back to its original heading by turning right `angle` degrees. Then go backwards the length of the branch. Call the `recursive_tree` function to draw a tree.
 
@@ -69,13 +75,13 @@ def recursive_tree(branch_length, angle, t):
         t.left(angle * 2)
         recursive_tree(branch_length - 15, angle, t)
         t.right(angle)
-        t.backwards(branch_length)
+        t.backward(branch_length)
         
 recursive_tree(45, 20, t)
+turtle.mainloop()
 ```
 
-[Code Visualizer](open_tutor code/recursion/recursive_tree.py)
-{Try it}(bash .guides/bg.sh python3 code/recursion/recursive_tree.py)
+{Try it}(bash .guides/bg.sh python3 code/recursion/recursive_tree.py 3)
 
 |||challenge
 ## What happens if you:
@@ -87,9 +93,8 @@ recursive_tree(45, 20, t)
 
 |||
 
-[Code Visualizer](open_tutor code/recursion/recursive_tree.py)
-{Try it}(bash .guides/bg.sh python3 code/recursion/recursive_tree.py)
+{Try it}(bash .guides/bg.sh python3 code/recursion/recursive_tree.py 4)
 
-<details><summary>**Solution**</summary>[Recursive tree solution](open_file .guides/secure/recursive_tree_solution.py panel=0)</details>
+<details><summary>**Solution**</summary> <img src=".guides/images/recursive-tree-code.png" /> </details>
 
 {Check It!|assessment}(multiple-choice-1551096855)

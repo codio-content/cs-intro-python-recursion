@@ -3,7 +3,7 @@
 ## Recursion Exercise 3
 
 **Problem**
-Write a recursive function called `bunny_ears` that takes the number of bunnies (an integer) as a parameter. Return the number of bunny ears (2 per bunny). Do not use multiplication.
+Write a recursive function called `bunny_ears` that takes the number of bunnies (an integer) as a parameter. Return the number of bunny ears (2 per bunny). Do not use multiplication; instead use addition.
 
 **Expected Output**
 * If the function call is `bunny_ears(8)`, then the function would return `16`
