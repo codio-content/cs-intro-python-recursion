@@ -32,14 +32,14 @@ turtle.mainloop()
 Start drawing the tree by going forward and turning right. Call `recursive_tree` again, but reduce `branch_length` by 15. The code should run, but the tree will not look like a tree. It looks more like a curve made of series of line segments decreasing in size.
 
 ```python
-![.guides/images/recursive-tree-code](.guides/images/recursive-tree-code.png)
 def recursive_tree(branch_length, angle, t):
     """Draw a tree recursively"""
     if branch_length > 5:
         t.forward(branch_length)
         t.right(angle)
         recursive_tree(branch_length - 15, angle, t)
-        
+
+recursive_tree(45, 20, t)
 turtle.mainloop()
 ```
 
@@ -50,18 +50,18 @@ The next step is to draw the branch that goes off to the left. Since the turtle 
 ```python
 def recursive_tree(branch_length, angle, t):
     """Draw a tree recursively"""
-![.guides/images/recursive-tree-code](.guides/images/recursive-tree-code.png)
     if branch_length > 5:
         t.forward(branch_length)
         t.right(angle)
         recursive_tree(branch_length - 15, angle, t)
         t.left(angle * 2)
         recursive_tree(branch_length - 15, angle, t)
-        
+
+recursive_tree(45, 20, t)        
 turtle.mainloop()
 ```
 
-{Try it}(bash .guides/bg.sh python3 code/recursion/recursive_tree.py2)
+{Try it}(bash .guides/bg.sh python3 code/recursion/recursive_tree.py 2)
 
 The tree is looking better, but there are two more things that need to be done. First, put the turtle back to its original heading by turning right `angle` degrees. Then go backwards the length of the branch. Call the `recursive_tree` function to draw a tree.
 

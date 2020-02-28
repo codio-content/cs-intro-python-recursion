@@ -1,6 +1,6 @@
-* Define recursion
-* Identify the base case
-* Identify the recursive pattern
+* ### Define recursion
+* ### Identify the base case
+* ### Identify the recursive pattern
 
 |||guidance
 ## Assumptions
