@@ -53,7 +53,10 @@ Always start with the base case when creating a recursive function. Each time th
 * Change the print statement to `print(factorial(0))`?
 
 Modify the base case so that `factorial(0)` does not result in an error. Test your new base case with a negative number.
-<details><summary>**Solution**</summary>The [factorial operation](https://en.wikipedia.org/wiki/Factorial) only works with positive integers. So the base case should be `if n <= 0:`.</details>
+<details>
+  <summary><strong>Solution</strong></summary>
+  The <a href="https://en.wikipedia.org/wiki/Factorial">factorial operation</a> only works with positive integers. So the base case should be `if n &lt;= 0:`.
+</details>
 
 |||
 
