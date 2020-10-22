@@ -12,6 +12,9 @@ Write a recursive function called `get_max` that takes a list of numbers as a pa
 [Code Visualizer](open_tutor code/recursion/exercise5.py)
 {try it}(python3 code/recursion/exercise5.py)
 
-<details><summary>**Hint**</summary>Use the `max` function to return the larger of two numbers.</details>
+<details>
+  <summary><strong>Hint</strong></summary>
+  Use the <code>max</code> function to return the larger of two numbers.
+</details>
 
 {Check It!|assessment}(test-178541446)
