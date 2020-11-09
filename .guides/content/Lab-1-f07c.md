@@ -96,18 +96,11 @@ turtle.mainloop()
 {Try it}(bash .guides/bg.sh python3 code/recursion/recursive_tree.py 4)
 
 <details>
-<<<<<<< HEAD
   <summary><strong>Solution</strong></summary> 
   
   ```python
   import turtle
-=======
-  <summary><strong>Solution</strong></summary>
   
-  ```python
-  import turtle
-  
->>>>>>> dbb8af49e5231cccf6af9052f9e8c4eb7ee7dfd4
   t = turtle.Turtle()
   t.lt(90)
   t.penup()
@@ -116,13 +109,8 @@ turtle.mainloop()
   t.speed(10)
   
   def recursive_tree(branch_length, angle, t):
-<<<<<<< HEAD
       """Draw a tree recursively"""
-      if branch_length > 5:
-=======
-      '''Draw a tree recursively'''
       if branch_length > 1:
->>>>>>> dbb8af49e5231cccf6af9052f9e8c4eb7ee7dfd4
           t.forward(branch_length)
           t.right(angle)
           recursive_tree(branch_length - 7, angle, t)
@@ -130,11 +118,7 @@ turtle.mainloop()
           recursive_tree(branch_length - 7, angle, t)
           t.right(angle)
           t.backward(branch_length)
-<<<<<<< HEAD
         
-=======
-  
->>>>>>> dbb8af49e5231cccf6af9052f9e8c4eb7ee7dfd4
   recursive_tree(60, 20, t)
   turtle.mainloop()
   ```

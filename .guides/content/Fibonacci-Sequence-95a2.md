@@ -68,25 +68,15 @@ for num in range(fibonacci_length):
 
 <details>
   <summary><strong>Why is Python timing out?</strong></summary>
-<<<<<<< HEAD
   The code written above is terribly inefficient. Each time through the loop, Python is calculating the same Fibonacci numbers again and again. When <code>num</code> is 1, Python calculates the Fibonacci numbers for 0 and 1. When <code>num</code> is 2, Python is calculating the Fibonacci numbers for 0, 1, and 2. Once <code>num</code> becomes large enough, it becomes too much work for Python to have to recalculate these large numbers over and over again. There is a more efficient way to do this by using a data structure called a dictionary. The idea is to store previously calculated Fibonacci numbers in the dictionary. So instead of recalculating the same numbers again and again, you can get these numbers from the dictionary. If a Fibonacci number is not in the dictionary, then calculate it and add it to the dictionary. Data structures are a bit beyond the scope of these lessons, but here is the code of a more efficient way to calculate and print the Fibonacci sequence. Copy and paste the code below into the IDE if you want to run it.
-=======
-  The code written above is terribly inefficient. Each time through the loop, Python is calculating the same Fibonacci numbers again and again. When <code>num</code> is 1, Python calculates the Fibonacci numbers for 0 and 1. When <code>num</code> is 2, Python is calculating the Fibonacci numbers for 0, 1, and 2. Once <code>num</code> becomes large enough, it becomes too much work for Python to have to recalculate these large numbers over and over again. There is a more efficient way to do this by using a data structure called a dictionary. The idea is to store previously calculated Fibonacci numbers in the dictionary. So instead of recalculating the same numbers again and again, you can get these numbers from the dictionary. If a Fibonacci number is not in the dictionary, then calculate it and add it to the dictionary. Data structures are a bit beyond the scope of these lessons, but here is the code of a more efficient way to calculate and print the Fibonacci sequence. Copy and paste the code from this new file into the old file if you want to run it.
->>>>>>> dbb8af49e5231cccf6af9052f9e8c4eb7ee7dfd4
-  
+
   ```python
   fibcache = {} #dictionary of Fibonacci numbers
 
   def fibonacci(n):
       """Check to see if a Fibonacci number has been calculated (in the dictionary).
-<<<<<<< HEAD
       If not, add it to the dictionary and return it.
       If yes, return the number from the dictionary."""
-=======
-      If not, add it to the dictionary and return it. If yes, return the number 
-      from the dictionary."""
-  
->>>>>>> dbb8af49e5231cccf6af9052f9e8c4eb7ee7dfd4
       if n not in fibcache.keys():
           fibcache[n] = _fibonacci(n)
       return fibcache[n]
