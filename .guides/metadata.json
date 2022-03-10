@@ -16,6 +16,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": true,
    "learningObjectives": ""
   },
   {
@@ -39,6 +40,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -62,6 +64,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -80,6 +83,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -98,6 +102,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -126,6 +131,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -154,6 +160,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -182,6 +189,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -205,6 +213,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -228,6 +237,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -251,6 +261,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -274,6 +285,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -297,6 +309,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   },
   {
@@ -320,6 +333,7 @@
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
+   "closeTerminalSession": false,
    "learningObjectives": ""
   }
  ],
